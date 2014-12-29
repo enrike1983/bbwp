@@ -1,14 +1,13 @@
 <div class="element-block-container">
     <h3>SOCIAL NETWORKS</h3>
-    <img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/fb_icon.png' ?>" />
-    <img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/tw_icon.png' ?>" />
-    <img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/yt_icon.png' ?>" />
+    <a target="_blank" href="https://www.facebook.com/burningblackofficial"><img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/fb_icon.png' ?>" /></a>
+    <a target="_blank" href="https://twitter.com/burningblackcom"><img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/tw_icon.png' ?>" /></a>
+    <a target="_blank" href="https://www.youtube.com/user/BurningBlackOfficial"><img class="social-img" src="<?php echo get_template_directory_uri().'/assets/img/images/yt_icon.png' ?>" /></a>
 </div>
 
 <div class="element-block-container">
     <h3>REMISSION OF SIN - OUT NOW</h3>
     <img src="<?php echo get_template_directory_uri().'/assets/img/images/remission_of_sin_cover.jpg' ?>">
-    <?php //do_action('foundationPress_after_content'); ?>
 </div>
 
 <div class="element-block-container">
@@ -18,18 +17,35 @@
 
 <div class="element-block-container">
     <h3>UPCOMING SHOWS</h3>
-    21.11.14 D-Reichenbach – E Werk<br/>
-    22.11.14 PL-Breslau – Klub Liverpool<br/>
-    23.11.14 PL-Posen – Klub u Bazyla<br/>
-    24.11.14 D-Berlin – C Club<br/>
-    26.11.14 D-Nuernberg – Hirsch<br/>
-    27.11.14 I-Audiodron – Turin<br/>
-    28.11.14 D-Burglengenfeld – VA Zentrum<br/>
-    30.11.14 B-Kortrijk – De Kreun
+
+    <?php $gig_query = new WP_Query(array(
+        'post_status' => 'publish',
+        'post_type' => 'gigs',
+        'meta_key' => 'data_editoriale',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
+    ));
+
+    if($gig_query->have_posts()):
+        while($gig_query->have_posts()): $gig_query->the_post(); ?>
+
+            <?php echo get_post_meta(get_the_ID(), 'data_editoriale_day', true) ?>.<?php echo get_post_meta(get_the_ID(), 'data_editoriale_month', true) ?>.<?php echo get_post_meta(get_the_ID(), 'data_editoriale_year', true) ?> - <?php echo get_the_title() ?><br/>
+
+        <?php
+        endwhile;
+    endif;
+    wp_reset_query();
+    ?>
+
 </div>
 
 <div class="element-block-container">
     <h3>TWITTER</h3>
     <a width="300" height="500" class="twitter-timeline" href="https://twitter.com/BurningBlackCom" data-widget-id="549225961104084992">Tweet di @BurningBlackCom</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div class="element-block-container">
+    <h3>FACEBOOK</h3>
+    <div class="fb-like-box" data-href="https://www.facebook.com/burningblackofficial" data-width="300" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 </div>

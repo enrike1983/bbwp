@@ -17,6 +17,8 @@ body {
 		padding-bottom: 10px;
 		margin-bottom: 25px;
 	  	margin-top: 25px;
+	  	text-transform: uppercase;
+	  	letter-spacing: 1px;
 	}
 
   	.logo {
@@ -45,8 +47,8 @@ body {
 					-webkit-text-fill-color: transparent;
 				}
 			}
-		  	.last {
-			  	margin-right: 10px;
+		  	:last-child {
+			  	margin-right: 5px;
 			}
 		}
 	  	span {
@@ -79,6 +81,12 @@ body {
 
 	  	background-image: url('../assets/img/images/transp_pattern.png');
 
+	    font-size: 13px;
+
+	  	p {
+		    font-size: 13px;
+		}
+
 	  	ul.pagination li.current a, ul.pagination li.current button	 {
 		  	background: #6f2722;
 		}
@@ -95,15 +103,41 @@ body {
 			}
 		}
 
-	  	.fb-like-box {
-		  	margin-top: 20px;
-		}
-
 		.element-block-container {
 			margin-bottom: 30px;
 		}
 	  	.social-img {
-		  margin-right: 20px;
+		    margin-right: 20px;
+		}
+
+	  	.gallery-item {
+		  	float:left;
+		  	border: 1px solid #b8babe;
+		  	margin-right: 10px;
+		}
+
+		.gallery-title {
+		  font-weight: bold;
+		  color: #ffffff;
+		  font-size: 16px;
+		  text-transform: uppercase;
+		}
+
+	  	.release-container-block {
+
+		  	border-bottom: 1px solid #b8babe;
+		  	margin-bottom: 30px;
+
+		  	h4 {
+			  	font-weight: bold;
+			  	color: #fff;
+			  	font-size: 14px;
+			  	text-transform: uppercase;
+			}
+
+			img {
+				width: 260px;
+			}
 		}
 	}
   	.footer {
@@ -134,9 +168,6 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  	/*body {
-		background-size: 100% auto;
-	}*/
 	.menu {
 	  	display:none;
 	}

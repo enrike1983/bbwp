@@ -15,7 +15,37 @@ function tvsc_custom_metaboxes_data_editoriale() {
         'tvsc_data_editoriale',
         'Data Editoriale',
         'get_tvsc_data_editoriale',
-        'bb_news',
+        'news',
+        'side',
+        'high',
+        array( 'id' => 'data_editoriale')
+    );
+
+    add_meta_box(
+        'tvsc_data_editoriale',
+        'Data Editoriale',
+        'get_tvsc_data_editoriale',
+        'gigs',
+        'side',
+        'high',
+        array( 'id' => 'data_editoriale')
+    );
+
+    add_meta_box(
+        'tvsc_data_editoriale',
+        'Data Editoriale',
+        'get_tvsc_data_editoriale',
+        'releases',
+        'side',
+        'high',
+        array( 'id' => 'data_editoriale')
+    );
+
+    add_meta_box(
+        'tvsc_data_editoriale',
+        'Data Editoriale',
+        'get_tvsc_data_editoriale',
+        'photos',
         'side',
         'high',
         array( 'id' => 'data_editoriale')

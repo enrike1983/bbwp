@@ -5,7 +5,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $news_query = new WP_Query(array(
     'paged' => $paged,
     'post_status' => 'publish',
-    'post_type' => 'bb_news',
+    'post_type' => 'news',
     'meta_key' => 'data_editoriale',
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
@@ -24,4 +24,5 @@ if($news_query->have_posts()):
     <?php
     endwhile;
 endif;
+wp_reset_query();
 ?>
