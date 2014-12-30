@@ -15,7 +15,11 @@ if($gig_query->have_posts()):
 
     <?php
     endwhile;
-endif;
+else: ?>
+
+    No gig planned at this time.
+
+<?php endif;
 
 wp_reset_query();
 

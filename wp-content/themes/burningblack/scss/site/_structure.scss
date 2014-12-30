@@ -25,12 +25,18 @@ body {
 	  	height: 400px;
 	}
 
+  	.row.menu {
+	  background-image: url('../assets/img/images/transp_pattern.png');
+	}
+
   	.menu {
-	  	background-image: url('../assets/img/images/transp_pattern.png');
 	  	height: 50px;
 	  	width: 100%;
-	  	margin-bottom: 5px;
+	  	margin-bottom: 8px;
 	  	text-align: justify;
+		-webkit-box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow:    0px 0px 24px 5px rgba(0, 0, 0, 0.75);
+		box-shadow:         0px 0px 24px 5px rgba(0, 0, 0, 0.75);
 	  	ul {
 		  	margin-left: 0;
 		  	padding: 0 10px;
@@ -107,7 +113,7 @@ body {
 			margin-bottom: 30px;
 		}
 	  	.social-img {
-		    margin-right: 20px;
+		    margin-right: 6px;
 		}
 
 	  	.gallery-item {
@@ -170,6 +176,9 @@ body {
 @media screen and (max-width: 640px) {
 	.menu {
 	  	display:none;
+	}
+  	.left-off-canvas-menu .menu {
+	  	display: block;
 	}
 	.logo {
 	  height: 100px !important;
