@@ -66,7 +66,7 @@
 <section class="container" role="document">
 	<div class="row logo">
 	</div>
-	<div class="row menu">
+	<div class="row mainmenu">
 		<?php get_template_part('parts/menu') ?>
 		<span></span>
 	</div>

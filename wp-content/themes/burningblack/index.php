@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="row main-content">
 	<aside id="sidebar" class="large-8 columns">
 		<?php if ( have_posts() ) : ?>

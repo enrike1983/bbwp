@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Releases
+Template Name: Album Releases
 */
 ?>
 

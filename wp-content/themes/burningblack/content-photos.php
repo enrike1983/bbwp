@@ -17,7 +17,5 @@ if($releases_query->have_posts()):
     <?php
     endwhile;
 endif;
-
 wp_reset_query();
-
 ?>

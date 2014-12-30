@@ -9,7 +9,9 @@
 
 <div class="element-block-container">
     <h3>REMISSION OF SIN - OUT NOW</h3>
-    <img src="<?php echo get_template_directory_uri().'/assets/img/images/remission_of_sin_cover.jpg' ?>">
+    <a target="_blank" href="http://www.amazon.de/Remission-Sin-Burning-Black/dp/B00NG39N4C/ref=sr_1_1?s=music&ie=UTF8&qid=1419928804&sr=1-1&keywords=remission+of+sin">
+        <img src="<?php echo get_template_directory_uri().'/assets/img/images/remission_of_sin_cover.jpg' ?>">
+    </a>
 </div>
 
 <div class="element-block-container">
@@ -35,10 +37,10 @@
 
         <?php
         endwhile;
-        wp_reset_query();
     ?>
 </div>
 <?php endif; ?>
+<?php wp_reset_query();?>
 
 <div class="element-block-container">
     <h3>TWITTER</h3>

@@ -20,6 +20,7 @@ function bb_custom_post_types() {
             'public' => true,
             'has_archive' => true,
             'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' )
+
         ));
 
     register_post_type( 'gigs',
@@ -49,6 +50,17 @@ function bb_custom_post_types() {
             'labels' => array(
                 'name' => __( 'Photos' ),
                 'singular_name' => __( 'Photos' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' )
+        ));
+
+    register_post_type( 'merch',
+        array(
+            'labels' => array(
+                'name' => __( 'Merch' ),
+                'singular_name' => __( 'Merch' )
             ),
             'public' => true,
             'has_archive' => true,
