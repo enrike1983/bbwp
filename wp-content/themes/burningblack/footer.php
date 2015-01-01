@@ -1,5 +1,4 @@
 <footer class="row footer">
-
 	<ul class="small-block-grid-2 large-block-grid-4">
 		<li><img src="<?php echo get_template_directory_uri().'/assets/img/images/logos/gng.png' ?>" /></li>
 		<li><img src="<?php echo get_template_directory_uri().'/assets/img/images/logos/masotti.png' ?>" /></li>
@@ -7,6 +6,7 @@
 		<li><img src="<?php echo get_template_directory_uri().'/assets/img/images/logos/jager.png' ?>" /></li>
 	</ul>
 </footer>
+<div class="rights">Burning Black &reg; - All rights reserved</div>
 <a class="exit-off-canvas"></a>
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>
