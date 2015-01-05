@@ -103,7 +103,12 @@ body {
 		}
 
 	  	.single-news {
-		  	margin-bottom: 20px;
+		  	margin-bottom: 50px;
+
+		  	p {
+			    margin-bottom: 0px;
+			}
+
 		  	.news-date {
 			  	font-size: 12px;
 			}
@@ -153,6 +158,15 @@ body {
 				width: 260px;
 			}
 		}
+
+	  	.past-concert-container {
+		  	h3 {
+			  	margin-top: 60px;
+			  	color: #858484;
+			  	border-bottom: 1px solid #858484;
+			}
+		  	color: #858484;
+		}
 	}
   	.footer {
 		-webkit-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.75);
@@ -195,6 +209,13 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+  	body {
+	  	background-position: 50% 10px;
+
+		h1 {
+		  	border-bottom: 0px;
+		}
+	}
 	.mainmenu {
 	  	display:none;
 	}

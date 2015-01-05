@@ -25,6 +25,12 @@
     'meta_key' => 'data_editoriale',
     'orderby' => 'meta_value_num',
     'order' => 'DESC',
+    'relation' => 'AND',
+    'meta_query' => array(
+        'key' => 'data_editoriale',
+        'value' => date('YmdHi'),
+        'compare' => '>='
+    )
 )); ?>
 
 <?php if($gig_query->have_posts()): ?>
