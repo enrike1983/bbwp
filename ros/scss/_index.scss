@@ -1,0 +1,37 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+body {
+	background-color: black;
+	color: white;
+	.subheader {
+		color: #6f6f6f;
+	}
+	h2 {
+		color: #6f6f6f;
+		font-family: 'Cardo', serif !important;
+	}
+	h4 {
+		color: white;
+	}
+	h5 {
+		color: #666;
+	}
+	.top-bar {
+		background-color: #171717;
+	}
+	.row .columns, .row .column {
+	  margin-top: 40px;
+	}	
+	.goals {
+		font-size: 14px;
+		a {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+	.jp-jplayer {
+		float: left;
+	}
+}

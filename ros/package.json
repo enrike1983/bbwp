@@ -1,0 +1,7 @@
+{
+  "name": "Project Name",
+  "version": "0.0.1",
+  "devDependencies": {
+     //installed packages will go in here
+  }
+}

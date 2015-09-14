@@ -1,0 +1,10 @@
+AuthUserFile /web/htdocs/www.burningblack.com/home/ros/.htpasswd
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
+
+require user rosaccess
+
+<ifModule mod_headers.c>
+Header set Connection keep-alive
+</ifModule>
