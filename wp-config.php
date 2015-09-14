@@ -22,7 +22,7 @@ define('DB_NAME', 'bbwp');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'pita725ewq');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
