@@ -11,6 +11,19 @@ Author URI: http://ericantonello.com
 */
 
 function bb_custom_post_types() {
+
+    register_post_type( 'bb-blog',
+        array(
+            'labels' => array(
+                'name' => __( 'Blog' ),
+                'singular_name' => __( 'Blog' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' )
+
+        ));
+
     register_post_type( 'news',
         array(
             'labels' => array(

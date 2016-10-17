@@ -15,6 +15,16 @@ function tvsc_custom_metaboxes_data_editoriale() {
         'tvsc_data_editoriale',
         'Data Editoriale',
         'get_tvsc_data_editoriale',
+        'bb-blog',
+        'side',
+        'high',
+        array( 'id' => 'data_editoriale')
+    );
+
+    add_meta_box(
+        'tvsc_data_editoriale',
+        'Data Editoriale',
+        'get_tvsc_data_editoriale',
         'news',
         'side',
         'high',
